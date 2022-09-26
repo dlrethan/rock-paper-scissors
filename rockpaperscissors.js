@@ -38,7 +38,7 @@ function gametime(randomNumber, userInput) {
     return "Computer chose Paper Congrats you Won!";
   }
 }
-console.log(gametime());
+
 function playGame() {
   const randomNumber = getRandomNumber();
   const userInput = prompt("What is your choice?(R,S,P)").toUpperCase();
