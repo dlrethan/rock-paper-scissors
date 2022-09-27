@@ -50,7 +50,7 @@ function playGame() {
   } else if (userInput === "R") {
     index = 0;
   } else {
-    alert("Put a valid input!");
+    alert("Put a valid input! R for rock, S for scissors, P for paper!");
     playGame();
     return;
   }
@@ -62,15 +62,12 @@ function replay() {
   let keepPlaying = true;
   while (keepPlaying) {
     playGame();
-    console.log("The number 1.");
     alert(`
     wins: ${wins}
     losses: ${losses}
     ties: ${ties}
     `);
-    console.log("The number 2.");
-    keepPlaying = confirm("Do you want to play again?");
-    console.log("The number 3.");
+    keepPlaying = confirm("Go next coward.");
   }
 }
 replay();
